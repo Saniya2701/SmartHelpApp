@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145259472159",
+    "project_id": "smarthelpapp-38949",
+    "storage_bucket": "smarthelpapp-38949.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145259472159:android:dde4debadaebd7d940fc2a",
+        "android_client_info": {
+          "package_name": "com.example.smarthelpapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnBOUvXZXdJyN9cm3SjgluY2kqTp6HTT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
