@@ -1,0 +1,11 @@
+[versions]
+agp = "8.2.2"
+firebaseAuth = "22.3.0"
+googleServices = "4.4.1"
+
+[libraries]
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
