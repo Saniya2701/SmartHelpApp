@@ -1,51 +1,98 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F7FB">
 
-    <TextView
-        android:id="@+id/nameText"
-        android:text="Name"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/editName"
-        android:hint="Edit Name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/updateNameBtn"
-        android:text="Update Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:text="My Profile"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1E2A38"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/emailText"
-        android:text="Email"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="20dp"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/newPassword"
-        android:hint="New Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/nameText"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/changePassBtn"
-        android:text="Change Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/editName"
+                android:hint="Edit Name"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/logoutBtn"
-        android:text="Logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+            <Button
+                android:id="@+id/updateNameBtn"
+                android:text="Update Name"
+                android:backgroundTint="#2563EB"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/emailText"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/newPassword"
+                android:hint="New Password"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/changePassBtn"
+                android:text="Change Password"
+                android:backgroundTint="#10B981"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:text="Logout"
+                android:backgroundTint="#EF4444"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,35 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login_gradient"
     android:gravity="center"
-    android:padding="24dp"
-    android:orientation="vertical">
+    android:padding="24dp">
 
-    <EditText
-        android:id="@+id/email"
-        android:hint="Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <!-- APP NAME -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SmartHelp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp"/>
 
-    <EditText
-        android:id="@+id/password"
-        android:hint="Password"
-        android:inputType="textPassword"
+    <!-- CARD -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:padding="20dp">
 
-    <Button
-        android:id="@+id/loginBtn"
-        android:text="Login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-    <Button
-        android:id="@+id/signupBtn"
-        android:text="Create Account"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:textColor="#000000"/>
+
+            <!-- EMAIL -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- PASSWORD -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- LOGIN BUTTON -->
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4A90E2"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- SIGNUP BUTTON -->
+            <Button
+                android:id="@+id/signupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE ACCOUNT"
+                android:textColor="#4A90E2"
+                android:backgroundTint="#E3F2FD"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>

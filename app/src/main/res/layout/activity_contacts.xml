@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/light_bg">
+    android:background="#F5F7FB">
 
     <!-- Top Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/primary_color"
+        android:background="#2563EB"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -19,7 +19,7 @@
             android:text="Emergency Contacts"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@android:color/white" />
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/contactCountText"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="0 contacts"
             android:textSize="12sp"
-            android:textColor="@android:color/white" />
+            android:textColor="#E5E7EB" />
     </LinearLayout>
 
     <!-- RecyclerView for Contacts List -->
@@ -54,14 +54,14 @@
             android:text="No Contacts Added"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@android:color/darker_gray" />
+            android:textColor="#1D4ED8" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add emergency contacts to get started"
             android:textSize="14sp"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="#2563EB"
             android:layout_marginTop="10dp" />
     </LinearLayout>
 
@@ -69,7 +69,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/primary_color"
+        android:background="#2563EB"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -79,7 +79,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Home"
-            android:textColor="@android:color/white"
+            android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground" />
 
         <Button
@@ -88,7 +88,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Contacts"
-            android:textColor="@android:color/white"
+            android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground" />
 
         <Button
@@ -97,7 +97,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Location"
-            android:textColor="@android:color/white"
+            android:textColor="#FFFFFF"
             android:background="?attr/selectableItemBackground" />
     </LinearLayout>
 
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/danger_color"
+        android:backgroundTint="#EF4444"
         android:src="@android:drawable/ic_input_add" />
 
 </LinearLayout>

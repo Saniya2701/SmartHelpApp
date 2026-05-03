@@ -7,12 +7,18 @@ import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.smarthelpapp.R;
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Show splash UI
+        setContentView(R.layout.activity_splash);
+
+        // Navigate after delay
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
 
             Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
