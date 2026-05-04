@@ -173,4 +173,9 @@ The app instantly:
 - Launch as a startup idea for local services
 
 ---
+## 🚀 Snapshots : 
+
+<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/733a2ac9-d6a7-4b28-98c2-a726f225997a" /> <br> <br>
+<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/3886011e-a671-40ec-b98f-89980888c148" />
+
 
